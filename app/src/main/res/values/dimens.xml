@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="small_margin">6dp</dimen>
+    <dimen name="button">64dp</dimen>
+    <dimen name="small_button">32dp</dimen>
+    <dimen name="button_margin">48dp</dimen>
+    <dimen name="XL">240dp</dimen>
+    <dimen name="Pic">90dp</dimen>
+</resources>

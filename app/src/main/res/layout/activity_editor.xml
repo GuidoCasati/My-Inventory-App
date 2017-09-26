@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/edit_item_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/load_picture"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/name_label"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_name"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_item_name"
+            app:layout_constraintTop_toBottomOf="@+id/edit_item_name" />
+
+        <EditText
+            android:id="@+id/edit_item_name"
+            style="@style/EditText"
+            android:contentDescription="@string/item_name"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/edit_item_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/category_label"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_category"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_item_category"
+            app:layout_constraintTop_toBottomOf="@+id/edit_item_category" />
+
+
+        <EditText
+            android:id="@+id/edit_item_category"
+            style="@style/EditText"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/edit_item_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_label"
+            tools:text="Description" />
+
+
+        <TextView
+            android:id="@+id/price_label"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_price"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_item_price"
+            app:layout_constraintTop_toBottomOf="@+id/edit_item_price" />
+
+
+        <EditText
+            android:id="@+id/edit_item_price"
+            style="@style/EditText"
+            android:contentDescription="@string/item_price"
+            android:inputType="numberDecimal"
+            app:layout_constraintLeft_toRightOf="@+id/edit_item_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quantity_label"
+            tools:text="Price" />
+
+
+        <TextView
+            android:id="@+id/quantity_label"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_quantity"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_item_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/edit_item_quantity" />
+
+
+        <EditText
+            android:id="@+id/edit_item_quantity"
+            style="@style/EditText"
+            android:inputType="number"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/edit_item_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_label"
+            tools:text="Quantity" />
+
+
+        <TextView
+            android:id="@+id/supplier_label"
+            style="@style/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_supplier"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_item_supplier"
+            app:layout_constraintTop_toBottomOf="@+id/edit_item_supplier" />
+
+        <EditText
+            android:id="@+id/edit_item_supplier"
+            style="@style/EditText"
+            android:contentDescription="@string/item_supplier"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/edit_item_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_label"
+            tools:text="Supplier Contact" />
+
+
+        <ImageButton
+            android:id="@+id/order_button"
+            style="@style/buttons"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:background="@color/colorAccent"
+            android:src="@drawable/order_button"
+            app:layout_constraintRight_toLeftOf="@+id/save_button"
+            app:layout_constraintTop_toBottomOf="@+id/price_label" />
+
+        <ImageButton
+            android:id="@+id/save_button"
+            style="@style/buttons"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:background="@color/colorAccent"
+            android:src="@drawable/save_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_label" />
+
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            style="@style/buttons"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:background="@color/colorAccent"
+            android:src="@drawable/delete_button"
+            app:layout_constraintRight_toLeftOf="@+id/order_button"
+            app:layout_constraintTop_toBottomOf="@+id/price_label" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="@dimen/small_button"
+            android:layout_height="@dimen/small_button"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorAccent"
+            android:onClick="increment"
+            android:text="+"
+            app:layout_constraintRight_toLeftOf="@+id/edit_item_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_label" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="@dimen/small_button"
+            android:layout_height="@dimen/small_button"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorAccent"
+            android:onClick="decrement"
+            android:text="-"
+            app:layout_constraintRight_toLeftOf="@+id/button_minus"
+            app:layout_constraintTop_toBottomOf="@+id/supplier_label" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

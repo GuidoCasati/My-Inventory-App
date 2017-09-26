@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Inventory App</string>
+
+    <!--listView-->
+    <string name="empty_inventory_text">Inventory is empty, please add items.</string>
+    <string name="editor_activity_title_add_item">Add Item</string>
+    <string name="editor_activity_title_edit_item">Edit Item</string>
+    <string name="load_photo">Load Photo</string>
+    <string name="action_insert_dummy_data">Insert dummy data</string>
+    <string name="action_delete_all_entries">Delete all data</string>
+    <string name="click_photo_to_update">Click Photo to update</string>
+
+    <!--item details-->
+    <string name="item_name">Name</string>
+    <string name="item_category">Category</string>
+    <string name="item_quantity">Quantity</string>
+    <string name="item_price">Price</string>
+    <string name="item_supplier">Supplier</string>
+
+    <!--messages-->
+    <string name="error_msg_missing_permissions">Please update permissions to get a picture.</string>
+    <string name="error_msg_insert_not_supported">"Insertion is not supported for "</string>
+    <string name="error_msg_empty_fields">Please, fill in all the fields to complete the inventory.</string>
+    <string name="error_msg_wrong_insert">ERROR: insertion failed, please verify and retry.</string>
+    <string name="success_msg_update">"Record updated successfully."</string>
+    <string name="dialog_msg_inventory_incomplete">Inventory is not complete, do you want to discard and exit?</string>
+    <string name="discard_msg">Discard</string>
+    <string name="stay_msg">Stay here</string>
+    <string name="error_msg_delete">Delete failed.</string>
+    <string name="success_msg_delete">Item deleted successfully.</string>
+    <string name="dialog_msg_delete">Do you confirm deletion of the item?</string>
+    <string name="msg_delete">Delete</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="menu_settings">Settings</string>
+    <string name="no_negative">Quantity can\'t be negative!</string>
+</resources>
